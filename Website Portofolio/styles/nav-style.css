@@ -73,12 +73,17 @@ i:hover {
 
 /* DROP-DOWN NAVIGATION */
 
+div.cross {
+    background-color: transparent;
+}
+
 div.cross button {
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 4.5rem;
-    width: 70%;
+    width: 67%;
     margin: 0 auto;
 }
 
@@ -92,10 +97,14 @@ section {
     width: 60%;
     height: 100vh;
     left: 40%;
-    background-color: rgba(16, 16, 29, .95);
+    /* background-color: rgba(96, 86, 240, .97); */
+    background-color: rgba(16, 16, 29, .96);
 }
 
-p.copyright {
-    font-weight: 300;
-    font-size: .5rem;
+div.dropdown ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }

@@ -67,11 +67,15 @@
     }
 
     section {
-        display: block;
+        /* display: block; */
     }
 }
 
 @media (max-width: 630px) {
+    div.cross button {
+        height: 3.5rem;
+    }
+
     header {
         min-height: 3.5rem;
     }
