@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+a:hover {
+    color: var(--red-buttons);
+}
+
+hr {
+    border: 1px solid var(--text-color);
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--red-buttons);
+    opacity: 70%;
+    transition: .2s;
+}
+
+span {
+    color: white;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.logo:hover{
+    cursor: default;
+    opacity: 100%;
+}
+
+div.bars {
+    position: absolute;
+    display: none;
+}
+
+div.bars button {
+    background-color: var(--bg-color);
+    border: none;
+}
+
+i {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+i:hover {
+    cursor: pointer;
+    color: var(--red-buttons);
+}
+
+/* DROP-DOWN NAVIGATION */
+
+div.cross button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 4.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    display: none;
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    left: 40%;
+    background-color: rgba(16, 16, 29, .95);
+}
+
+p.copyright {
+    font-weight: 300;
+    font-size: .5rem;
+}

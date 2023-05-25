@@ -1,0 +1,128 @@
+@media (max-width: 930px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    .budhi p {
+        font-size: 2rem;
+    }
+
+    .job h1 {
+        font-size: 4.8rem;
+    }
+
+    .desc p {
+        font-size: 1.15rem;
+    }
+
+    .btn button {
+        font-size: 1rem;
+        width: 9rem;
+        height: 3rem;
+    }
+    
+    section {
+        display: none;
+    }
+} 
+
+@media (max-width: 790px) {
+    header {
+        min-height: 4.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    div.bars {
+        position: static;
+        display: block;
+    }
+
+    main {
+        margin-top: 3rem;
+    }
+
+    .budhi p {
+        font-size: 1.5rem;
+    }
+
+    .job h1 {
+        font-size: 3.75rem;
+    }
+
+    .desc p {
+        font-size: 1rem;
+    }
+
+    div.btn {
+        column-gap: 5rem;
+    }
+
+    .btn button {
+        font-size: .75rem;
+        width: 8.25rem;
+        height: 2.85rem;
+    }
+
+    section {
+        display: block;
+    }
+}
+
+@media (max-width: 630px) {
+    header {
+        min-height: 3.5rem;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .budhi p {
+        font-size: 1.2rem;
+    }
+
+    .job h1 {
+        font-size: 3rem;
+    }
+
+    .desc p {
+        font-size: .75rem;
+    }
+
+    div.btn {
+        column-gap: 5rem;
+    }
+
+    .btn button {
+        font-size: .7rem;
+        width: 7.25rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .budhi p {
+        font-size: 1rem;
+    }
+
+    .job h1 {
+        font-size: 2.25rem;
+    }
+
+    .desc p {
+        font-size: .6rem;
+    }
+
+    div.btn {
+        column-gap: 4.5rem;
+    }
+
+    .btn button {
+        font-size: .7rem;
+        width: 7.25rem;
+        height: 2.5rem;
+    }
+}
