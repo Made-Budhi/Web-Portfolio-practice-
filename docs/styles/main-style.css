@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: 8rem;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.budhi p {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.job h1 {
+    color: var(--job-color);
+    text-align: center;
+    font-weight: 900;
+    font-size: 6rem;
+    width: 12.5ch;
+    line-height: 90%;
+}
+
+.desc p {
+    text-align: center;
+    width: 50ch;
+    font-size: 1.25rem;
+    letter-spacing: .03em;
+}
+
+em {
+    color: var(--purple-emphasize);
+    font-weight: 700;
+    font-style: normal;
+}

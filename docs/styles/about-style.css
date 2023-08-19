@@ -1,0 +1,29 @@
+section div h1 {
+    color: white;
+    letter-spacing: .15rem;
+    font-size: 3rem;
+}
+
+/* About menu styling */
+section.about {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.about div p {
+    width: 70%;
+    text-align: justify;
+    font-size: 1.25rem;
+    letter-spacing: .001em;
+}
+
+.my-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.my-image img {
+    border-radius: .5rem;
+    width: 30rem;
+}

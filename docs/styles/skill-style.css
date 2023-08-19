@@ -1,0 +1,48 @@
+section.skill {
+    margin-top: 10rem;
+}
+
+div.skill-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    margin: 7rem 0;
+}
+
+section.list {
+    display: flex;
+    column-gap: 10rem;
+}
+
+section.list div {
+    display: flex;
+    column-gap: .75rem;
+    font-size: 1.5rem;
+}
+
+section.list div i {
+    font-size: 3rem;
+}
+section.list div i:hover {
+    cursor: default;
+}
+
+div.skill-list .list h2 {
+    color: var(--text-color);
+}
+
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.skill-hr {
+    border: 1.5px solid white;
+    width: 100%;
+}
