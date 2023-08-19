@@ -1,4 +1,20 @@
 header {
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+div.menu {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +44,12 @@ li {
     width: 5rem;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 a {
+    height: 100%;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
@@ -39,8 +60,11 @@ a:hover {
     color: var(--red-buttons);
 }
 
-hr {
+.main-hr {
+    position: fixed;
+    width: 80%;
     border: 1px solid var(--text-color);
+    z-index: -1;
 }
 
 .logo {
@@ -65,26 +89,77 @@ h1 {
 
 /* HOVER ANIMATION */
 
-.child-1 a {
-    color: var(--red-buttons);
-}
+    /* DEFAULT ACTIVE MENU */
+    .child-1 {
+        color: var(--red-buttons);
+    }
 
-.child-1 {
-    background-image: linear-gradient(to bottom, rgba(225, 29, 72,0), rgba(225, 29, 72, .5));
-}
+    .child-1 {
+        background-image: var(--nav-active);
+    }
 
-div.animation {
-    position: absolute;
-    background-color: var(--red-buttons);
-    height: 2px;
-    width: 5rem;
-    top: 99.9%;
-    border-radius: 1rem;
-}
+    div.animation {
+        position: absolute;
+        background-color: var(--red-buttons);
+        height: 2px;
+        width: 5rem;
+        top: 97%;
+        border-radius: 1rem;
+        transition: .2s;
+        z-index: 1;
+    }   
 
-.child-2:hover+.animation {
-    left: 5rem;
-}
+    /* CHILD 2 MENU : ABOUT */
+    a.child-2:active li {
+        background-image: var(--nav-active);
+    }
+
+    .child-2:hover ~ .animation {
+        transform: translateX(5rem);
+    }
+
+    .child-2:hover {
+        color: var(--red-buttons);
+    }
+
+    /* CHILD 3 MENU : WORK */
+    a.child-3:active li {
+        background-image: var(--nav-active);
+    }
+
+    .child-3:hover ~ .animation {
+        transform: translateX(10rem);
+    }
+
+    .child-3:hover {
+        color: var(--red-buttons);
+    }
+    
+    /* CHILD 4 MENU : SKILL */
+    a.child-4:active li {
+        background-image: var(--nav-active);
+    }
+
+    .child-4:hover ~ .animation {
+        transform: translateX(15rem);
+    }
+
+    .child-4:hover {
+        color: var(--red-buttons);
+    }
+    
+    /* CHILD 5 MENU : CONTACT */
+    a.child-5:active li {
+        background-image: var(--nav-active);
+    }
+
+    .child-5:hover ~ .animation {
+        transform: translateX(20rem);
+    }
+
+    .child-5:hover {
+        color: var(--red-buttons);
+    }
 
 /* BARS MENU */
 
@@ -129,7 +204,7 @@ body {
     position: relative;
 }
 
-section {
+section.mobile-nav {
     display: none;
     position: fixed;
     width: 60%;

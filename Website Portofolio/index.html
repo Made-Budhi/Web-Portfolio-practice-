@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- https://building-a-portfolio-website.vercel.app/ -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +12,40 @@
     <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="styles/button-style.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="styles/about-style.css">
+    <link rel="stylesheet" href="styles/skill-style.css">
+    <link rel="stylesheet" href="styles/work-style.css">
+    <link rel="stylesheet" href="styles/contact-style.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
     <!-- For General Styling -->
     <style>
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
         :root {
             --purple-emphasize: rgb(96, 86, 240);
             --red-buttons: rgb(225, 29, 72);
             --logo-color: rgba(225, 29, 72, .8);
             --bg-color: rgb(16, 16, 29);
+            --scrollbar-track-color: rgb(10, 10, 36);
             --job-color: rgba(189, 202, 249, .8);
-            --text-color: rgba(255, 255, 255, .5);
+            --text-color: rgba(255, 255, 255, .4);
             --span-color: rgba(255, 255, 255, .8);
+            --nav-active: linear-gradient(
+                            to bottom, rgba(225, 29, 72,0), 
+                            rgba(225, 29, 72, .5));
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth !important;
         }
         
         body {
@@ -39,13 +55,28 @@
             margin: 0 auto;
         }
 
+        /* Scrollbar width */
+        ::-webkit-scrollbar {
+        width: 4px;
+        }
+
+        /* Scrollbar track */
+        ::-webkit-scrollbar-track {
+        background: var(--scrollbar-track-color);
+        }
+
+        /* Scrollbar handle */
+        ::-webkit-scrollbar-thumb {
+        background: var(--red-buttons);
+        }
+
     </style>
 
 </head>
 <body>
 
     <!-- Dropdown Navigation -->
-    <section>
+    <section class="mobile-nav">
 
         <div class="cross bars">
             <button>
@@ -67,54 +98,213 @@
     <!-- Main Navigation -->
     <header>
 
-        <div class="logo">
-            <h1>Budhi <span>Pro.</span></h1>
+        <div class="menu">
+
+            <div class="logo">
+                <h1>Budhi <span>Pro.</span></h1>
+            </div>
+    
+            <nav>
+    
+                <ul>
+                    <!-- Home -->
+                    <a class="child-1" href="#home">
+                        <li>Home</li>
+                    </a>
+                    <!-- About -->
+                    <a class="child-2" href="#about">
+                        <li>About</li>
+                    </a>
+                    <!-- Work -->
+                    <a class="child-3" href="#">
+                        <li>Work</li>
+                    </a>
+                    <!-- Skill -->
+                    <a class="child-4" href="#">
+                        <li>Skill</li>
+                    </a>
+                    <!-- Contact -->
+                    <a class="child-5" href="#">
+                        <li>Contact</li>
+                    </a>
+                    <!-- Hover Animation -->
+                    <div class="animation"></div>
+                </ul>
+    
+            </nav>
+    
+            <!-- Not visible in desktop view -->
+            <div class="bars">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
         </div>
 
-        <nav>
-            <ul>
-                <li class="child-1"><a href="#">Home</a></li>
-                <li class="child-2"><a href="#">About</a></li>
-                <li class="child-3"><a href="#">Work</a></li>
-                <li class="child-4"><a href="#">Skill</a></li>
-                <li class="child-5"><a href="#">Contact</a></li>
-            </ul>
-
-            <div class="animation"></div>
-        </nav>
-
-        <!-- Not visible in desktop view -->
-        <div class="bars">
-            <button>
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
+        <hr class="main-hr">
+    
     </header>
     
-    <hr>
-
-   <main>
+   <main id="home">
 
         <div class="budhi">
             <p>Hi, I'm Budhi</p>
         </div>
 
         <div class="job">
-            <h1>FULL-STACK WEB DEVELOPER</h1>
+            <h1>FRONT-END WEB DEVELOPER</h1>
         </div>
 
         <div class="desc">
-            <p>A passionate <em>Fullstack Developer</em> and <em>UI/UX</em> enthusiast specialized 
+            <p>A passionate <em>Frontend Web Developer</em> and <em>UI/UX</em> enthusiast specialized 
                 in building stunning pixel-perfect interactive websites/applications.</p>
         </div>
 
         <div class="btn">
             <button>Reach Me</button>
-            <button>Resume</button>
+            <button>My Resume</button>
         </div>
    
     </main>
+
+    <section class="about" id="about">
+
+        <div>
+
+            <h1>About</h1>
+            <p><br>Hello there! I'm Budhi, a <em>Frontend web developer</em> based in Bali. I wake up in the morning, grab a cup of coffee, open up my laptop and build things that live on the web all day, everyday.
+                <br>
+                <br>
+                People who know me say I'm obsessed, that's fair, I am very driven and love learning new things.
+                <br>
+                <br>
+                I also love designing things or anything related about art. 
+            </p>
+
+        </div>
+
+        <div class="my-image">
+
+            <img src="images/pas foto 1x1.jpg" alt="Budhi Ganteng">
+
+        </div>
+
+    </section>
+
+    <section class="skill">
+
+        <div class="skill-title">
+
+            <h1>Skill</h1>
+            <hr class="skill-hr">
+
+        </div>
+
+        <div class="skill-list">
+
+            <section class="list">
+
+                <div>
+                    <i class="fa-brands fa-java" style="color: #e11d48;"></i>
+                    <h2>Java</h2>
+                </div>
+    
+                <div>
+                    <i class="fa-brands fa-php" style="color: #e11d48;"></i>
+                    <h2>PHP</h2>
+                </div>
+
+            </section>
+
+            <section class="list">
+
+                <div>
+                    <i class="fa-brands fa-html5" style="color: #e11d48;"></i>
+                    <h2>HTML</h2>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt" style="color: #e11d48;"></i>
+                    <h2>CSS</h2>
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECT -->
+    <section class="work">
+
+        <div>
+            
+            <p>Featured Project by</p>
+            <h1 class="name">MADE BUDHI</h1>
+            <p class="date">2022 - Present</p>
+
+        </div>
+
+        <div class="project-list">
+
+            
+            <div class="row row-odd">
+                
+                <div class="img">
+                    <!-- Image Here -->
+                </div>
+
+                <div class="desc">
+                    <h2>Mindful Space</h2>
+                    <p>Mindful Space is a website that my friends and I created in order 
+                        to solve mental issues that suffered by many people especially teenagers 
+                        at my country Indonesia. With this project, my friends and I hoped that it 
+                        could cure mental issues in Indonesia.
+                    </p>
+                    <div class="btn">
+                        <button class="project">See More</button>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+        <div>
+
+            <h1>Get In Contact</h1>
+
+        </div>
+
+        <div class="contact-list">
+
+            <ul>
+                <a href="https://github.com/Made-Budhi" class="github"><li class="fa-brands fa-github"></li></a>
+
+                <li class="line"></li>
+
+                <a href="https://instagram.com/made_budhi" class="instagram"><li class="fa-brands fa-instagram"></li></a>
+
+                <li class="line"></li>
+
+                <a href="https://www.linkedin.com/in/made-budhi-757039272/" class="linkedin"><li class="fa-brands fa-linkedin"></li></a>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h1>~ MADE BUDHI ~</h1>
+
+    </footer>
 
 </body>
 </html>

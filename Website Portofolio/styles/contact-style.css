@@ -1,0 +1,23 @@
+div.contact-list {
+    margin: 5rem 0;
+}
+
+div.contact-list ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.contact-list ul a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+li.line {
+    height: 100px;
+    width: 2.5px;
+    background-color: var(--text-color);
+    cursor: default;
+}

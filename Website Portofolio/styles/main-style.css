@@ -4,7 +4,7 @@ main {
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 p {
@@ -21,7 +21,7 @@ p {
     text-align: center;
     font-weight: 900;
     font-size: 6rem;
-    width: 13ch;
+    width: 12.5ch;
     line-height: 90%;
 }
 

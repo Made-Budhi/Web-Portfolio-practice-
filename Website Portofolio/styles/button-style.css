@@ -23,3 +23,7 @@ div.btn {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px var(--red-buttons);
 }
+
+.btn button:active {
+    transform: translateY(1px);
+}
